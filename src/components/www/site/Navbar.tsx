@@ -78,7 +78,7 @@ export default function Navbar() {
                   <span className="sr-only">Open user menu</span>
                   <img
                     className="h-8 w-8 rounded-full"
-                    src="2BF41C0F-3A4C-4F86-9858-66ED4BBDA1A2.JPG"
+                    src="/img/2BF41C0F-3A4C-4F86-9858-66ED4BBDA1A2.JPG"
                     alt=""
                   />
                 </MenuButton>
