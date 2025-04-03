@@ -31,7 +31,7 @@ const ContactForm = () => {
 
   return (
     <div className="bg-white p-6 rounded shadow">
-      <h2 className="text-2xl font-bold mb-6">Contáctanos</h2>
+      <h2 className="text-2xl font-bold mb-6">Contáctame</h2>
 
       <form ref={form} onSubmit={sendEmail} className="space-y-4">
         <div>

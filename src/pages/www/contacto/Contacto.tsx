@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Spinner } from "@/components/ui/spinner"
 import MapaUbicacion from "@/components/www/contacto/Mapa"
-import ContactForm from '@/components/www/contacto/formulario';
+import ContactForm from '@/components/www/contacto/Formulario';
 
 const Contacto = () => {
   const [loading, setLoading] = useState(true);
