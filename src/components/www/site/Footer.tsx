@@ -1,53 +1,44 @@
 import React from "react";
-import { Twitter, Instagram, Linkedin, MessageCircle } from "lucide-react";
+import { Twitter, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 px-6 py-10 mt-12 ">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        <div>
-          <h4 className="text-lg font-semibold mb-4">Mi Empresa</h4>
-          <p className="text-sm">Construyendo soluciones web modernas con pasión y código limpio.</p>
-        </div>
-        <div>
-          <h4 className="text-lg font-semibold mb-4">Enlaces</h4>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:underline">Inicio</a></li>
-            <li><a href="#" className="hover:underline">Servicios</a></li>
-            <li><a href="#" className="hover:underline">Proyectos</a></li>
-            <li><a href="#" className="hover:underline">Contacto</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="text-lg font-semibold mb-4">Legal</h4>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:underline">Términos</a></li>
-            <li><a href="#" className="hover:underline">Privacidad</a></li>
-            <li><a href="#" className="hover:underline">Cookies</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="text-lg font-semibold mb-4">Síguenos</h4>
-          <div className="flex space-x-4">
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:text-green-600">
-              <MessageCircle className="w-5 h-5" />
-            </a>
+    <footer className="bg-neutral-900 text-white mt-auto">
+      <div className="max-w-6xl mx-auto py-6 px-6 md:px-10">
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Columna izquierda: Info */}
+          <div className="text-center md:text-left">
+            <h5 className="uppercase text-lg font-semibold mb-2">
+              Técnico en sistemas microinformáticos y redes
+            </h5>
+            <p className="text-sm">
+              Estudiante en formación de DAW (Desarrollo de Aplicaciones Web), cuento con el módulo de SMR.
+            </p>
+          </div>
+
+          {/* Columna derecha: Redes */}
+          <div className="text-center md:text-right">
+            <h5 className="uppercase text-lg font-semibold mb-3">Redes Sociales</h5>
+            <div className="flex justify-center md:justify-end items-center space-x-4">
+              <a href="https://x.com/sergioalfa06" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="https://www.facebook.com/sergio.gallardogrima" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="https://www.instagram.com/seergiiogg__" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
+                <Instagram className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div className="mt-10 text-center text-xs text-gray-500 dark:text-gray-400">
-        © {new Date().getFullYear()} Mi Empresa. Todos los derechos reservados.
+
+      <div className="text-center bg-black text-white text-sm py-2">
+        © 2025 Sergio.
       </div>
     </footer>
+
   );
 };
 
